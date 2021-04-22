@@ -7,6 +7,7 @@
     <script>
       const values = { str: 8, dex: 8, con: 8, wis: 8, int: 8, cha: 8 };
       const costs = { 6: -2, 7: -1, 8: 0, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 7, 15: 9, 16: 12, 17: 15, 18: 19 };
+      const total = 27;
 
       function calc(stat, op) {
         if (!['add', 'sub'].includes(op)) return;
@@ -22,10 +23,10 @@
           sum += costs[x];
           return sum;
         }, 0);
-        const total = 33 - sum;
+        const newTotal = total - sum;
         const el = document.getElementById('total');
-        const color = total >= 0 ? 'black' : 'red';
-        el.innerHTML = `${total}/33`;
+        const color = newTotal >= 0 ? 'black' : 'red';
+        el.innerHTML = `${newTotal}/${total}`;
         el.style.color = color;
       }
 
@@ -43,7 +44,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="total" id="total">33/33</div>
+      <div class="total" id="total">27/27</div>
       <div class="wrapper">
         <div class="item">
           <div class="label">STR</div>
