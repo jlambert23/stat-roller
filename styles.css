@@ -42,14 +42,17 @@ body {
   text-align: center;
   font-size: 2em;
 }
+
 .score {
   padding: 20px;
   text-align: center;
   font-size: 4em;
 }
+
 .btns {
   display: flex;
 }
+
 .btn {
   height: 100%;
   width: 100%;
@@ -59,6 +62,5 @@ body {
 
 .reset-container {
   display: flex;
-  justify-content: center;
   margin-top: 15px;
 }
