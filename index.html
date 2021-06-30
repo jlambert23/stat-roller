@@ -25,7 +25,7 @@
         }, 0);
         const newTotal = total - sum;
         const el = document.getElementById('total');
-        const color = newTotal >= 0 ? 'black' : 'red';
+        const color = newTotal >= 0 ? 'white' : '#ff5359';
         el.innerHTML = `${newTotal}/${total}`;
         el.style.color = color;
       }
@@ -49,54 +49,52 @@
           <div class="label">STR</div>
           <div class="score" id="str">8</div>
           <div class="btns">
-            <button class="btn" onclick="calc('str', 'sub')">-</button>
-            <button class="btn" onclick="calc('str', 'add')">+</button>
+            <button class="btn-sub" onclick="calc('str', 'sub')">-</button>
+            <button class="btn-add" onclick="calc('str', 'add')">+</button>
           </div>
         </div>
         <div class="item">
           <div class="label">DEX</div>
           <div class="score" id="dex">8</div>
           <div class="btns">
-            <button class="btn" onclick="calc('dex', 'sub')">-</button>
-            <button class="btn" onclick="calc('dex', 'add')">+</button>
+            <button class="btn-sub" onclick="calc('dex', 'sub')">-</button>
+            <button class="btn-add" onclick="calc('dex', 'add')">+</button>
           </div>
         </div>
         <div class="item">
           <div class="label">CON</div>
           <div class="score" id="con">8</div>
           <div class="btns">
-            <button class="btn" onclick="calc('con', 'sub')">-</button>
-            <button class="btn" onclick="calc('con', 'add')">+</button>
+            <button class="btn-sub" onclick="calc('con', 'sub')">-</button>
+            <button class="btn-add" onclick="calc('con', 'add')">+</button>
           </div>
         </div>
         <div class="item">
           <div class="label">INT</div>
           <div class="score" id="int">8</div>
           <div class="btns">
-            <button class="btn" onclick="calc('int', 'sub')">-</button>
-            <button class="btn" onclick="calc('int', 'add')">+</button>
+            <button class="btn-sub" onclick="calc('int', 'sub')">-</button>
+            <button class="btn-add" onclick="calc('int', 'add')">+</button>
           </div>
         </div>
         <div class="item">
           <div class="label">WIS</div>
           <div class="score" id="wis">8</div>
           <div class="btns">
-            <button class="btn" onclick="calc('wis', 'sub')">-</button>
-            <button class="btn" onclick="calc('wis', 'add')">+</button>
+            <button class="btn-sub" onclick="calc('wis', 'sub')">-</button>
+            <button class="btn-add" onclick="calc('wis', 'add')">+</button>
           </div>
         </div>
         <div class="item">
           <div class="label">CHA</div>
           <div class="score" id="cha">8</div>
           <div class="btns">
-            <button class="btn" onclick="calc('cha', 'sub')">-</button>
-            <button class="btn" onclick="calc('cha', 'add')">+</button>
+            <button class="btn-sub" onclick="calc('cha', 'sub')">-</button>
+            <button class="btn-add" onclick="calc('cha', 'add')">+</button>
           </div>
         </div>
       </div>
-      <div class="reset-container">
-        <button class="btn" onclick="reset()">Reset</button>
-      </div>
+      <button class="btn-reset" onclick="reset()">Reset</button>
     </div>
   </body>
 </html>
